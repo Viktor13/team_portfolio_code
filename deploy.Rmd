@@ -1,0 +1,18 @@
+
+```{r}
+# blogdown::serve_site()
+
+system(command = "rm -r /srv/store/students/karepinv/team_portfolio/public/*")
+
+blogdown::build_site()
+
+system(command = "rm -r /srv/store/students/karepinv/team_portfolio_deploy/Viktor13.github.io/*")
+
+system(command = "cp -r /srv/store/students/karepinv/team_portfolio/public/. /srv/store/students/karepinv/team_portfolio_deploy/Viktor13.github.io/")
+```
+
+git add --all
+git commit -m "commit"
+git push -u origin master
+
+# вводим пароль и логин
